@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="MASTER_PAGE_DEMO.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <div class="header">
+                <h1>This is the Header Section of My Page.!</h1>
+            </div>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li> <a href="Home.aspx"> Home </a></li>
+                        <li> <a href="Contact.aspx"> Contact </a></li>
+                        <li> <a href="Default.aspx"> Default </a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+        </div>
+            <div class="footer">
+                <h3>All Rights Reserved. &copy; 2026</h3>
+            </div>
+    </form>
+</body>
+</html>
